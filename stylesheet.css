@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+  background-image: linear-gradient(to right, #f1dbff, #d0eeff, #fefbec);
+}
+
+header {
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header > h1 {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+.recipe {
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  margin: 24px;
+  padding: 24px;
+  width: 300px;
+  transition: all 0.2s ease-in-out;
+}
+
+.recipe:hover {
+  transform: scale(1.2);
+}
+
+.container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 32px;
+}
+
+.container {
+  width: 100%;
+}
+
+.navigation {
+  width: 100%;
+  margin: 32px 0 16px 0;
+  border: solid 1px;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 6px;
+  margin: 5px;
+}
+
+.navigation a {
+  padding: 4px 16px;
+  box-shadow: inset 0 0 0 0 #ffe0e4;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.navigation a:hover {
+  box-shadow: inset 320px 0 0 0 #ffe0e4;
+}
