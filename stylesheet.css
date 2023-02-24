@@ -33,16 +33,18 @@ a {
   color: black;
   font-size: 18px;
 }
+
 .recipe {
+  width: 280px;
+  height: auto;
   transition: all 0.2s ease-in-out;
   margin: 18px;
   border: 1px solid #eee;
   border-radius: 4px;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
   padding: 18px;
-  width: auto;
-  height: auto;
 }
+
 .recipe:hover {
   transform: scale(1.2);
 }
@@ -85,7 +87,7 @@ h2 {
   border-radius: 4px;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
   padding: 8px 12px;
-  max-width: 180px;
+  width: 200px;
 }
 p {
   margin: 0 72px 18px 72px;
