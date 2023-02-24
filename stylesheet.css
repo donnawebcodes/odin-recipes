@@ -1,83 +1,103 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  color: black;
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0;
-  min-height: 100%;
-  min-width: 100%;
-  background-image: linear-gradient(to right, #f1dbff, #d0eeff, #fefbec);
-}
-
-header {
-  margin: 16px;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  background-image: linear-gradient(to right, #f1dbff, #d0eeff, #fefbec);
+  min-width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  line-height: 20px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+header {
   align-items: center;
   justify-content: center;
+  margin: 16px;
 }
 header > h1 {
-  font-size: 30px;
   margin-right: 20px;
+  font-size: 30px;
 }
-
-ul {
-  margin: 0;
+ul,
+ol {
+  align-items: center;
+  margin: 0 72px;
   padding: 0;
   list-style-type: none;
 }
-
 a {
-  font-size: 18px;
   text-decoration: none;
   color: black;
+  font-size: 18px;
 }
-
 .recipe {
-  border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
-  border-radius: 4px;
-  margin: 24px;
-  padding: 24px;
-  width: 300px;
   transition: all 0.2s ease-in-out;
+  margin: 18px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
+  padding: 18px;
+  width: 200px;
 }
-
 .recipe:hover {
   transform: scale(1.2);
 }
-
-.container ul {
+.recipe-container ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 32px;
 }
-
-.container {
+.recipe-container {
   width: 100%;
 }
-
 .navigation {
-  width: 100%;
   margin: 32px 0 16px 0;
   border: solid 1px;
+  width: 100%;
 }
-
 .navigation ul {
   display: flex;
   justify-content: space-around;
-  padding: 6px;
   margin: 5px;
+  padding: 6px;
 }
-
 .navigation a {
-  padding: 4px 16px;
-  box-shadow: inset 0 0 0 0 #ffe0e4;
   transition: all 0.4s ease-in-out 0s;
+  box-shadow: inset 0 0 0 0 #ffe0e4;
+  padding: 4px 16px;
 }
-
 .navigation a:hover {
   box-shadow: inset 320px 0 0 0 #ffe0e4;
+}
+.recipe-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+h2 {
+  margin: 18px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
+  padding: 8px 12px;
+  max-width: 180px;
+}
+p {
+  margin: 0 72px 18px 72px;
+}
+footer {
+  margin-top: auto;
+}
+/* media */
+img {
+  width: auto;
+  max-width: 330px;
+  height: auto;
+  max-height: 330px;
+}
+.giphy-embed {
+  max-width: 100%;
 }
