@@ -40,7 +40,8 @@ a {
   border-radius: 4px;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
   padding: 18px;
-  width: 200px;
+  width: auto;
+  height: auto;
 }
 .recipe:hover {
   transform: scale(1.2);
